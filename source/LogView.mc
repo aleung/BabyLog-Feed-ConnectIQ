@@ -1,15 +1,14 @@
 using Toybox.WatchUi;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
-using Utils;
 
 class LogView extends WatchUi.View {
 
-	var mCurrentFeeds;
+	var logEntries;
 
     function initialize(currentFeeds) {
         View.initialize();
-        mCurrentFeeds = currentFeeds;
+        logEntries = currentFeeds;
     }
 
     // Load your resources here
@@ -42,31 +41,30 @@ class LogView extends WatchUi.View {
 
 	function updateLogLabels(startingPoint) {
 		
-		for (var i=0;i<5;i++) {
-		
-			var currentTimeLabel = View.findDrawableById("lblFeedLogTime"+i);
-			var currentDurationLabel = View.findDrawableById("lblFeedLogDuration"+i);
-			var labelTimeString = Lang.format(
-				"$1$. at: $2$",
-				[	
-					10-startingPoint+i,
-					mCurrentFeeds.getTimeString(startingPoint-i)
-				]
-			);
-			var labelDurationString = Lang.format(
-				"Since last: $1$",
-				[
-					mCurrentFeeds.getDurationString(startingPoint-i)
-				]
-			);			
-			//System.println("Date Log label: "+labelString);
-			if ((10-startingPoint+i) == 11) {
-				labelTimeString = "";
-				labelDurationString = "";
-			}
-            currentTimeLabel.setText(labelTimeString);
-            currentDurationLabel.setText(labelDurationString);
+		for (var i=0;i<6;i++) {
+            var intervalString = "";
+            var timeString = "";
 
+			if ((startingPoint - i) >= 0) {
+                timeString = Lang.format(
+                    "$1$.  $2$",
+                    [	
+                        NUM_ENTRIES-startingPoint+i,
+                        logEntries.getTimeString(startingPoint-i)
+                    ]
+                );
+                var interval = logEntries.getInterval(startingPoint-i);
+                if (interval != null) {
+                    intervalString = interval[:days] > 0
+                        ? Lang.format("$1$d$2$h+", [interval[:days].format("%d"), interval[:hours].format("%d")]) :
+                        : Lang.format("$1$h$2$m", [interval[:hours].format("%d"), interval[:minutes].format("%02d")]);
+                }
+            }
+
+            View.findDrawableById("labelLogTime"+i).setText(timeString);
+            if (i<5) {
+              View.findDrawableById("labelLogInterval"+i).setText(intervalString);
+            }
 		}
 		
 		WatchUi.requestUpdate();

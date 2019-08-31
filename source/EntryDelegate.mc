@@ -21,8 +21,7 @@ class EntryDelegate extends WatchUi.BehaviorDelegate {
 	function onAddFeed() {
 		
 		//!	get current time and update feed class
-		mCurrentFeeds.addFeed(Time.now());
-		// System.println("New feed list: " + mCurrentFeeds.getFeeds());
+		mCurrentFeeds.add(Time.now());
 		
 		//! update labels
 		mParentView.updateLabels();
@@ -30,13 +29,17 @@ class EntryDelegate extends WatchUi.BehaviorDelegate {
 	}
 	
     function onNextPage() {
-        return pushMenu(WatchUi.SLIDE_IMMEDIATE);
+        return showLogView();
     }
 
-    function pushMenu(slideDir) {
+    function onSelect() {
+        return showLogView();
+    }
+
+    function showLogView() {
         var view = new LogView(mCurrentFeeds);
         var delegate = new LogDelegate(view);
-        WatchUi.pushView(view, delegate, slideDir);
+        WatchUi.pushView(view, delegate, WatchUi.SLIDE_LEFT);
         return true;
     }
 	 

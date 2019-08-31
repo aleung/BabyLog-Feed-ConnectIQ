@@ -7,6 +7,5 @@
     	<state id="stateDefault" bitmap="@Drawables.iconAddLog" />
     </button>
     <bitmap id="iconArrowDown" x="center" y="223" filename="../drawables/arrow-down.png" />
-    <!-- make bottom 2/3 clickable -->
-    <button x="center" y="80" width="240" height="160" background="Gfx.COLOR_TRANSPARENT" behavior="onNextPage" />
+    <drawable id="pageIndicator" />
 </layout>

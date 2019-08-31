@@ -7,7 +7,7 @@ class LogItApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
-        entries = new Feeds();
+        entries = new Log();
     }
 
     // onStart() is called on application start up

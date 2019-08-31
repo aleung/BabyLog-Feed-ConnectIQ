@@ -1,4 +1,5 @@
 using Toybox.WatchUi;
+using Toybox.Graphics;
 
 class EntryView extends WatchUi.View {
 
@@ -39,13 +40,26 @@ class EntryView extends WatchUi.View {
         var logType = "log";
 		View.findDrawableById("labelLogType").setText(logType);		
 
-		//! update last feed time label
-		// var labelString = "Last feed: " + mCurrentFeeds.getTimeString(9);
-		// View.findDrawableById("lblLastFeed").setText(labelString);		
-		
-		//! update last feed elapsed label
-		View.findDrawableById("labelElapsed").setText(mCurrentFeeds.getDurationString("now"));	
-			
+        var elapsedField = View.findDrawableById("labelElapsed");
+        elapsedField.setColor(Graphics.COLOR_WHITE);
+
+        var warningDuration = 120; // test
+
+        var elapsed = mCurrentFeeds.getElapsed();
+        if (elapsed != null) {
+            var days = DurationUtils.days(elapsed);
+            var hours = DurationUtils.hours(elapsed);
+            var minutes = DurationUtils.minutes(elapsed);
+            var elapsedString = days > 0
+                ? Lang.format("$1$+$2$:", [days.format("%d"), hours.format("%d")]) :
+                : Lang.format("$1$:$2$", [hours.format("%d"), minutes.format("%02d")]);	
+            elapsedField.setText(elapsedString);
+            if (elapsed > warningDuration) {
+                elapsedField.setColor(Graphics.COLOR_RED);
+            }
+        } else {
+            elapsedField.setText("--");	
+        }
 	}
 
 }

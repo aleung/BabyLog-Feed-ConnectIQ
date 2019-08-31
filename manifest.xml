@@ -6,7 +6,6 @@
             <iq:product id="vivoactive3m"/>
         </iq:products>
         <iq:permissions>
-            <iq:uses-permission id="PersistedContent"/>
         </iq:permissions>
         <iq:languages>
             <iq:language>eng</iq:language>
