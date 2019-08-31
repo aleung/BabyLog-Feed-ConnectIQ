@@ -43,4 +43,4 @@ jenv local 1.8
 
 ## Credits
 - Originate from the [BabyLog:Feed](https://github.com/tanstaaflFH/BabyLog-Feed-ConnectIQ) app made by [Falko Hegewald](fh.development@zoho.eu).
-- Done icon: <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- Icons made by [Dave Gandy](https://www.flaticon.com/authors/dave-gandy)</a> from https://www.flaticon.com/

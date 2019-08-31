@@ -1,11 +1,10 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="icon_done.png" />
-    <bitmap id="IconDone" filename="icon_done_large.png" />
-    <bitmap id="IconAddLog" filename="icon_done_wide.png" />    
+    <!-- <bitmap id="iconDone" filename="icon_done_large.png" /> -->
+    <bitmap id="iconAddLog" filename="icon_done_wide.png" />   
     <drawable-list id="ButtonBorders" >
-    	<shape type="rectangle" height="55" color="Gfx.COLOR_YELLOW" />
-    	<shape type="rectangle" y="55" height="5" color="Gfx.COLOR_WHITE" />
-    	<shape type="rectangle" y="200" height="5" color="Gfx.COLOR_WHITE" />
+        <shape type="rectangle" height="60" color="Gfx.COLOR_YELLOW" />
+    	<shape type="rectangle" y="60" height="5" color="Gfx.COLOR_WHITE" />
     </drawable-list>
     <drawable-list id="logHeader" >
     	<shape type="rectangle" height="40" color="Gfx.COLOR_YELLOW" />

@@ -1,15 +1,12 @@
 <layout id="MainLayout">
-    <label x="center" y="65"  justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" color="Gfx.COLOR_WHITE" id="lblTitle" />
-    <label x="center" y="83"  justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_WHITE" id="lblElapsed" />
-    <label x="210"    y="155" justification="Graphics.TEXT_JUSTIFY_RIGHT"  font="Graphics.FONT_MEDIUM" color="Gfx.COLOR_WHITE" text="ago" />
-    <label x="center" y="195" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" color="Gfx.COLOR_WHITE" text="..." />
-    <drawable id="ButtonBorders" />        
-    <button x="center" y="top" width="240" height="55" background="Gfx.COLOR_TRANSPARENT" behavior="onAddFeed">
-    	<state id="stateDefault" bitmap="@Drawables.IconAddLog" />
-    	<state id="stateDisabled" color="Gfx.COLOR_TRANSPARENT" />    	    	
+    <label x="center" y="60"  justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_WHITE" id="labelElapsed" />
+    <label x="center" y="140" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL"  color="Gfx.COLOR_WHITE" text="passed since last" />
+    <label x="center" y="170" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" color="Gfx.COLOR_WHITE" id="labelLogType" />
+    <drawable id="ButtonBorders" />
+    <button x="center" y="top" width="240" height="60" behavior="onAddFeed">
+    	<state id="stateDefault" bitmap="@Drawables.iconAddLog" />
     </button>
-    <button x="center" y="205" width="240" height="35" background="Gfx.COLOR_TRANSPARENT" behavior="onNextPage" >
-    	<state id="stateDefault" color="Gfx.COLOR_TRANSPARENT" />
-    	<state id="stateHighlighted" color="Gfx.COLOR_WHITE" />
-    </button>
+    <bitmap id="iconArrowDown" x="center" y="223" filename="../drawables/arrow-down.png" />
+    <!-- make bottom 2/3 clickable -->
+    <button x="center" y="80" width="240" height="160" background="Gfx.COLOR_TRANSPARENT" behavior="onNextPage" />
 </layout>
