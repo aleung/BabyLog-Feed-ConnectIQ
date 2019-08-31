@@ -24,6 +24,28 @@ This is my first ConnectIQ app and I tailored it completely to my wishes / needs
 It may or may not be improved in the future.
 Feel free to send me any comments.
 
+## Develop
+- Install JDK8
+- Install Garmin ConnectIQ SDK
+- Create file `properties.mk` in project root. Follow the guide at https://github.com/danielsiwiec/garmin-connect-seed
+- Run `make run` to run in simulator and `make deploy` to deploy on watch.
+
+### Install JDK8 on macOS
+
+```
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
+brew install jenv   # add follow the console output to setup your shell
+```
+
+Following instruction on https://github.com/jenv/jenv to setup `jenv` 
+
+Set to use JDK8 in this project:
+
+```
+jenv local 1.8
+```
+
 ## Credits
 - Baby bottle (on upper right combo button): Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
 - Application icon: Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
