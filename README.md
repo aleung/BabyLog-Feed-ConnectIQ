@@ -19,11 +19,6 @@ The last 10 feeds are stored.
 ![VivoActive3 Main Screen](./screenshots/vivoactive3_Main.PNG)
 ![VivoActive3 Log Screen](./screenshots/vivoactive3_Log.PNG)
 
-## Disclaimer
-This is my first ConnectIQ app and I tailored it completely to my wishes / needs.
-It may or may not be improved in the future.
-Feel free to send me any comments.
-
 ## Develop
 - Install JDK8
 - Install Garmin ConnectIQ SDK
@@ -47,8 +42,5 @@ jenv local 1.8
 ```
 
 ## Credits
-- Baby bottle (on upper right combo button): Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-- Application icon: Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-
-## Contact
-[fh.development@zoho.eu](fh.development@zoho.eu)
+- Originate from the [BabyLog:Feed](https://github.com/tanstaaflFH/BabyLog-Feed-ConnectIQ) app made by [Falko Hegewald](fh.development@zoho.eu).
+- Done icon: <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

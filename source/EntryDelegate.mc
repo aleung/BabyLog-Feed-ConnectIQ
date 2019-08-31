@@ -22,7 +22,7 @@ class EntryDelegate extends WatchUi.BehaviorDelegate {
 		
 		//!	get current time and update feed class
 		mCurrentFeeds.addFeed(Time.now());
-		//System.println("New feed list: " + mCurrentFeeds.getFeeds());
+		// System.println("New feed list: " + mCurrentFeeds.getFeeds());
 		
 		//! update labels
 		mParentView.updateLabels();

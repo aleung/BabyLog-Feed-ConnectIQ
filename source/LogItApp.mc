@@ -1,13 +1,13 @@
 using Toybox.Application;
 using Toybox.Application.Storage;
 
-class BabyLogFeedApp extends Application.AppBase {
+class LogItApp extends Application.AppBase {
 
-	var mCurrentFeeds;
+	var entries;
 
     function initialize() {
         AppBase.initialize();
-        mCurrentFeeds = new Feeds();
+        entries = new Feeds();
     }
 
     // onStart() is called on application start up
@@ -20,8 +20,8 @@ class BabyLogFeedApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-    	var initialView = new EntryView(mCurrentFeeds);
-        return [ initialView, new EntryDelegate(initialView, mCurrentFeeds) ];
+    	var initialView = new EntryView(entries);
+        return [ initialView, new EntryDelegate(initialView, entries) ];
     }
 
 }

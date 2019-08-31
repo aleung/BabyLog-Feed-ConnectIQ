@@ -36,13 +36,15 @@ class EntryView extends WatchUi.View {
     }
 
 	function updateLabels() {
-	
+        var logType = "log";
+		View.findDrawableById("lblTitle").setText("Last " + logType);		
+
 		//! update last feed time label
-		var labelString = "Last feed: " + mCurrentFeeds.getTimeString(9);
-		View.findDrawableById("lblLastFeed").setText(labelString);		
+		// var labelString = "Last feed: " + mCurrentFeeds.getTimeString(9);
+		// View.findDrawableById("lblLastFeed").setText(labelString);		
 		
 		//! update last feed elapsed label
-		View.findDrawableById("lblElapsedFeed").setText("Elapsed: " + mCurrentFeeds.getDurationString("now"));	
+		View.findDrawableById("lblElapsed").setText(mCurrentFeeds.getDurationString("now"));	
 			
 	}
 

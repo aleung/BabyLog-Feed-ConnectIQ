@@ -1,7 +1,7 @@
 <drawables>
-    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
-    <bitmap id="AddFeedIconDefault" filename="icon_bottle_default.png" />
-    <bitmap id="AddFeedIconPressed" filename="icon_bottle_pressed.png" />    
+    <bitmap id="LauncherIcon" filename="icon_done.png" />
+    <bitmap id="IconDone" filename="icon_done_large.png" />
+    <bitmap id="IconAddLog" filename="icon_done_wide.png" />    
     <drawable-list id="ButtonBorders" >
     	<shape type="rectangle" height="55" color="Gfx.COLOR_YELLOW" />
     	<shape type="rectangle" y="55" height="5" color="Gfx.COLOR_WHITE" />
