@@ -1,19 +1,20 @@
-![Hero](./screenshots/hero.jpeg)
-A Widget for Garmin ConnectIQ (currently: VivoActive3 / Music)
+# Log It
 
-## Intention
-This is a simple widget used to mark / log the times you feed your baby.
-I created this during my parental leave to help me remember when the baby had his last meal.
+A ConnectIQ widget for Garmin watch (currently: VivoActive3 / Music).
 
-The data is directly stored on the device.
-The last 10 feeds are stored.
+Log anything you need to do periodically, e.g. take medicine, feed your baby. Remind you the elapsed time since you last did it. 
+
+The data is directly stored on the watch. It stores up to 10 records and old records will be removed.
 
 ## Use
-- Tap on the yellow button at the top to add a new feed time
-- Tap on the three dots at the bottom to open the log screen with the ten last feed times.
-- On the second screen:
--- Scroll up and down to see all ten entries
--- Swipe left to go back
+Main Screen:
+- Tap on the yellow button at the top to add a new log entry.
+- Tap other space to show history
+
+History Screen:
+
+- Scroll up and down to see all ten entries
+- Tap or swipe right to go back
 
 ## Screenshots
 ![VivoActive3 Main Screen](./screenshots/vivoactive3_Main.PNG)

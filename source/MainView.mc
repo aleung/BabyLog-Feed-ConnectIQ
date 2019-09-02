@@ -37,13 +37,13 @@ class MainView extends WatchUi.View {
     }
 
 	function updateLabels() {
-        var logType = "log";
+        var logType = "log";  // TODO: configurable
 		View.findDrawableById("labelLogType").setText(logType);		
 
         var elapsedField = View.findDrawableById("labelElapsed");
         elapsedField.setColor(Graphics.COLOR_WHITE);
 
-        var warningDuration = 120; // test
+        var warningDuration = -1; // TODO: configurable
 
         var elapsed = mCurrentFeeds.getElapsed();
         if (elapsed != null) {
@@ -54,7 +54,7 @@ class MainView extends WatchUi.View {
                 ? Lang.format("$1$+$2$:", [days.format("%d"), hours.format("%d")]) :
                 : Lang.format("$1$:$2$", [hours.format("%d"), minutes.format("%02d")]);	
             elapsedField.setText(elapsedString);
-            if (elapsed > warningDuration) {
+            if (warningDuration > 0 && elapsed > warningDuration) {
                 elapsedField.setColor(Graphics.COLOR_ORANGE);
             }
         } else {
