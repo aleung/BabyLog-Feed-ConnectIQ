@@ -4,7 +4,7 @@ using Toybox.Time;
 
 const SCROLL_ITEMS = 4;
 
-class LogDelegate extends WatchUi.BehaviorDelegate {
+class HistoryDelegate extends WatchUi.BehaviorDelegate {
 
 	var mLogStartPoint = 9;
 	var mParentView = null;
@@ -21,10 +21,12 @@ class LogDelegate extends WatchUi.BehaviorDelegate {
   
   function onNextPage() {
     scrollUp();
+		return true;
   }
   
   function onPreviousPage() {
     scrollDown();
+		return true;
   } 
 
   function onSelect() {

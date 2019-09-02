@@ -1,23 +1,22 @@
 <drawables>
-    <bitmap id="LauncherIcon" filename="icon_done.png" />
-    <!-- <bitmap id="iconDone" filename="icon_done_large.png" /> -->
-    <bitmap id="iconAddLog" filename="icon_done_wide.png" />   
-    <drawable-list id="pageIndicator" >
-        <bitmap id="iconArrowDown" x="center" y="223" filename="arrow-down.png" />
+    <bitmap id="LauncherIcon" filename="icon_done_white.png" />
+    <drawable-list id="background" >
+        <shape type="rectangle" color="Gfx.COLOR_YELLOW" />
     </drawable-list>
-    <drawable-list id="ButtonBorders" >
+    <drawable-list id="backgroundMain" >
         <shape type="rectangle" height="60" color="Gfx.COLOR_YELLOW" />
     	<shape type="rectangle" y="60" height="5" color="Gfx.COLOR_WHITE" />
+        <bitmap id="iconAddLog" x="104" y="17" filename="icon_done.png" />   
     </drawable-list>
     <drawable-list id="logHeader" >
     	<shape type="rectangle" height="40" color="Gfx.COLOR_YELLOW" />
     	<shape type="rectangle" y="40" height="5" color="Gfx.COLOR_WHITE" />
     </drawable-list>
     <drawable-list id="logDividers" >
-    	<shape type="rectangle" y="75"  width="140" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="105" width="140" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="135" width="140" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="165" width="140" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="195" width="140" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="75"  width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="105" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="135" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="165" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="195" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
     </drawable-list>
 </drawables>

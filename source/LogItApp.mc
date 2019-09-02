@@ -3,11 +3,11 @@ using Toybox.Application.Storage;
 
 class LogItApp extends Application.AppBase {
 
-	var entries;
+	var log;
 
     function initialize() {
         AppBase.initialize();
-        entries = new Log();
+        log = new Log();
     }
 
     // onStart() is called on application start up
@@ -20,8 +20,8 @@ class LogItApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-    	var initialView = new EntryView(entries);
-        return [ initialView, new EntryDelegate(initialView, entries) ];
+    	var initialView = new MainView(log);
+        return [ initialView, new MainDelegate(log) ];
     }
 
 }

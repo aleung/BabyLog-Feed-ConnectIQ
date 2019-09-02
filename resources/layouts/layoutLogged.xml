@@ -1,0 +1,4 @@
+<layout id="LoggedLayout">
+    <drawable id="background" />
+    <bitmap id="iconDone" x="center" y="center" filename="../drawables/icon_done_large.png" />
+</layout>

@@ -23,7 +23,7 @@ class Log {
 	
 	function getTimeString(index) {
 		if (index < 0 || mTimeArray[index] == null) {
-			return "--";
+			return null;
 		}
 		var momNowGreg = Gregorian.info(mTimeArray[index], Time.FORMAT_SHORT);
 		return Lang.format(

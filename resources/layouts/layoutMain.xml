@@ -2,10 +2,7 @@
     <label x="center" y="60"  justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_WHITE" id="labelElapsed" />
     <label x="center" y="140" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL"  color="Gfx.COLOR_WHITE" text="passed since last" />
     <label x="center" y="170" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" color="Gfx.COLOR_WHITE" id="labelLogType" />
-    <drawable id="ButtonBorders" />
-    <button x="center" y="top" width="240" height="60" behavior="onAddFeed">
-    	<state id="stateDefault" bitmap="@Drawables.iconAddLog" />
-    </button>
+    <drawable id="backgroundMain" />
+    <button x="center" y="top" width="240" height="60" behavior="onAddLogEntry" />
     <bitmap id="iconArrowDown" x="center" y="223" filename="../drawables/arrow-down.png" />
-    <drawable id="pageIndicator" />
 </layout>

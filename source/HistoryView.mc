@@ -2,7 +2,7 @@ using Toybox.WatchUi;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 
-class LogView extends WatchUi.View {
+class HistoryView extends WatchUi.View {
 
 	var logEntries;
 
@@ -13,7 +13,7 @@ class LogView extends WatchUi.View {
 
     // Load your resources here
     function onLayout(dc) {
-        setLayout(Rez.Layouts.LogLayout(dc));      
+        setLayout(Rez.Layouts.HistoryLayout(dc));      
         updateLogLabels(9);
         //System.println("Layout loaded for FBLView");
     }
@@ -46,13 +46,10 @@ class LogView extends WatchUi.View {
             var timeString = "";
 
 			if ((startingPoint - i) >= 0) {
-                timeString = Lang.format(
-                    "$1$.  $2$",
-                    [	
-                        NUM_ENTRIES-startingPoint+i,
-                        logEntries.getTimeString(startingPoint-i)
-                    ]
-                );
+                var time = logEntries.getTimeString(startingPoint-i);
+                if (time != null) {
+                    timeString = Lang.format("$1$.  $2$", [ NUM_ENTRIES-startingPoint+i, time ]);
+                }
                 var interval = logEntries.getInterval(startingPoint-i);
                 if (interval != null) {
                     intervalString = interval[:days] > 0

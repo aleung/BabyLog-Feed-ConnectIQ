@@ -1,7 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 
-class EntryView extends WatchUi.View {
+class MainView extends WatchUi.View {
 
 	var mCurrentFeeds;
 
