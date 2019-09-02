@@ -2,15 +2,15 @@
 	<drawable id="logHeader" />
     <label id="lblLogHeader" font="Graphics.FONT_TINY" x="center" y="8" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" text="History" />
     <drawable id="logDividers" />
-    <label id="labelLogTime0"     font="Graphics.FONT_SMALL" x="120" y="45"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogTime1"     font="Graphics.FONT_SMALL" x="120" y="75"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogTime2"     font="Graphics.FONT_SMALL" x="120" y="105" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogTime3"     font="Graphics.FONT_SMALL" x="120" y="135" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogTime4"     font="Graphics.FONT_SMALL" x="120" y="165" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogTime5"     font="Graphics.FONT_SMALL" x="120" y="195" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogInterval0" font="Graphics.FONT_TINY"  x="215" y="60"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogInterval1" font="Graphics.FONT_TINY"  x="215" y="90"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogInterval2" font="Graphics.FONT_TINY"  x="215" y="120" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogInterval3" font="Graphics.FONT_TINY"  x="215" y="150" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
-    <label id="labelLogInterval4" font="Graphics.FONT_TINY"  x="215" y="180" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />                      
+    <label id="labelLogTime0"     font="Graphics.FONT_SMALL" x="125" y="45"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogTime1"     font="Graphics.FONT_SMALL" x="125" y="75"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogTime2"     font="Graphics.FONT_SMALL" x="125" y="105" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogTime3"     font="Graphics.FONT_SMALL" x="125" y="135" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogTime4"     font="Graphics.FONT_SMALL" x="125" y="165" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogTime5"     font="Graphics.FONT_SMALL" x="125" y="195" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogInterval0" font="Graphics.FONT_TINY"  x="215" y="56"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogInterval1" font="Graphics.FONT_TINY"  x="215" y="86"  color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogInterval2" font="Graphics.FONT_TINY"  x="215" y="116" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogInterval3" font="Graphics.FONT_TINY"  x="215" y="146" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="labelLogInterval4" font="Graphics.FONT_TINY"  x="215" y="176" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />                      
 </layout>

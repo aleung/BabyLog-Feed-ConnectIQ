@@ -46,9 +46,10 @@ class HistoryView extends WatchUi.View {
             var timeString = "";
 
 			if ((startingPoint - i) >= 0) {
-                var time = logEntries.getTimeString(startingPoint-i);
+                var time = logEntries.getTime(startingPoint-i);
                 if (time != null) {
-                    timeString = Lang.format("$1$.  $2$", [ NUM_ENTRIES-startingPoint+i, time ]);
+                    var greg = Gregorian.info(time, Time.FORMAT_MEDIUM);
+                    timeString = Lang.format("$1$  $2$:$3$", [ greg.day_of_week, greg.hour.format("%02d"), greg.min.format("%02d") ]);
                 }
                 var interval = logEntries.getInterval(startingPoint-i);
                 if (interval != null) {

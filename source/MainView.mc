@@ -55,7 +55,7 @@ class MainView extends WatchUi.View {
                 : Lang.format("$1$:$2$", [hours.format("%d"), minutes.format("%02d")]);	
             elapsedField.setText(elapsedString);
             if (elapsed > warningDuration) {
-                elapsedField.setColor(Graphics.COLOR_RED);
+                elapsedField.setColor(Graphics.COLOR_ORANGE);
             }
         } else {
             elapsedField.setText("--");	

@@ -20,19 +20,12 @@ class Log {
 
 		save();
 	}
-	
-	function getTimeString(index) {
+
+	function getTime(index) {
 		if (index < 0 || mTimeArray[index] == null) {
 			return null;
 		}
-		var momNowGreg = Gregorian.info(mTimeArray[index], Time.FORMAT_SHORT);
-		return Lang.format(
-				"$1$:$2$",
-				[
-						momNowGreg.hour.format("%02d"),
-						momNowGreg.min.format("%02d")
-				]
-		);
+		return mTimeArray[index];
 	}
 
 	function getElapsed() {

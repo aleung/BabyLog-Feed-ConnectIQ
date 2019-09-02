@@ -13,10 +13,10 @@
     	<shape type="rectangle" y="40" height="5" color="Gfx.COLOR_WHITE" />
     </drawable-list>
     <drawable-list id="logDividers" >
-    	<shape type="rectangle" y="75"  width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="105" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="135" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="165" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
-    	<shape type="rectangle" y="195" width="150" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="75"  width="138" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="105" width="138" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="135" width="138" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="165" width="138" height="1" color="Gfx.COLOR_DK_GRAY" />
+    	<shape type="rectangle" y="195" width="138" height="1" color="Gfx.COLOR_DK_GRAY" />
     </drawable-list>
 </drawables>
