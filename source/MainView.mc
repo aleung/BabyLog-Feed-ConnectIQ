@@ -3,17 +3,16 @@ using Toybox.Graphics;
 
 class MainView extends WatchUi.View {
 
-	var mCurrentFeeds;
+	var log;
 
-    function initialize(currentFeeds) {
+    function initialize(refLog) {
         View.initialize();
-        mCurrentFeeds = currentFeeds;
+        log = refLog;
     }
 
     // Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.MainLayout(dc));      
-        //System.println("Layout loaded for FBLView");
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -37,15 +36,13 @@ class MainView extends WatchUi.View {
     }
 
 	function updateLabels() {
-        var logType = "log";  // TODO: configurable
+        var logType = Application.Properties.getValue("logType");
 		View.findDrawableById("labelLogType").setText(logType);		
 
         var elapsedField = View.findDrawableById("labelElapsed");
         elapsedField.setColor(Graphics.COLOR_WHITE);
 
-        var warningDuration = -1; // TODO: configurable
-
-        var elapsed = mCurrentFeeds.getElapsed();
+        var elapsed = log.getElapsed();
         if (elapsed != null) {
             var days = DurationUtils.days(elapsed);
             var hours = DurationUtils.hours(elapsed);
@@ -54,7 +51,8 @@ class MainView extends WatchUi.View {
                 ? Lang.format("$1$+$2$:", [days.format("%d"), hours.format("%d")]) :
                 : Lang.format("$1$:$2$", [hours.format("%d"), minutes.format("%02d")]);	
             elapsedField.setText(elapsedString);
-            if (warningDuration > 0 && elapsed > warningDuration) {
+            var timeoutMinutes = Application.Properties.getValue("timeoutMinutes");
+            if (timeoutMinutes > 0 && elapsed > timeoutMinutes * 60) {
                 elapsedField.setColor(Graphics.COLOR_ORANGE);
             }
         } else {

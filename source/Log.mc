@@ -5,6 +5,7 @@ using DurationUtils;
 
 const NUM_ENTRIES = 10;
 
+(:background)
 class Log {
 
 	var mTimeArray = new [NUM_ENTRIES];     /* Moment */
@@ -65,16 +66,16 @@ class Log {
 	}
 
 	hidden function load() {
-		try {
-			var tmpArray = Storage.getValue("TimeArray");
-			for( var i = 0; i < mTimeArray.size(); i++ ) {
-				if (tmpArray[i] != null) {
-					mTimeArray[i] = new Time.Moment(tmpArray[i]);
-				}
+		var tmpArray = Storage.getValue("TimeArray");
+		if (tmpArray == null) {
+			System.println("Could not load TimeArray from storage");
+			return;
+		}
+		for( var i = 0; i < mTimeArray.size(); i++ ) {
+			if (tmpArray[i] != null) {
+				mTimeArray[i] = new Time.Moment(tmpArray[i]);
 			}
-		} catch (ex) {
-			System.println("Could not load TimeArray from Storage: " + ex.getErrorMessage());
-		}		
+		}
 	}
 
 }

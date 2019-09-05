@@ -1,0 +1,15 @@
+<settings>
+
+    <setting propertyKey="@Properties.logType" title="@Strings.LogType" prompt="@Strings.LogTypePrompt">
+        <settingConfig type="alphaNumeric" maxLength="16" />
+    </setting>
+
+    <setting propertyKey="@Properties.timeoutMinutes" title="@Strings.Timeout" prompt="@Strings.TimeoutPrompt">
+        <settingConfig type="numeric" min="5" />
+    </setting>
+
+    <setting propertyKey="@Properties.alert" title="@Strings.Alert">
+        <settingConfig type="boolean" />
+    </setting>
+
+</settings>

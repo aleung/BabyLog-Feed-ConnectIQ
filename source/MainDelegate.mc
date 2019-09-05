@@ -1,6 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.System;
 using Toybox.Time;
+using Toybox.Background;
 
 class MainDelegate extends WatchUi.BehaviorDelegate {
 
@@ -18,6 +19,7 @@ class MainDelegate extends WatchUi.BehaviorDelegate {
 	function onAddLogEntry() {
 		log.add(Time.now());
         showLoggedView();
+        setAlert();
 	}
 	
     function onNextPage() {
@@ -39,5 +41,16 @@ class MainDelegate extends WatchUi.BehaviorDelegate {
     function showLoggedView() {
         var view = new LoggedView();
         WatchUi.pushView(view, null, WatchUi.SLIDE_DOWN);
+    }
+
+    private function setAlert() {
+        if (!Application.Properties.getValue("alert")) {
+            System.println("alert is disabled");
+            return;
+        }
+        var timeoutMinutes = Application.Properties.getValue("timeoutMinutes");
+        var eventTime = Time.now().add(new Time.Duration(timeoutMinutes * 60));
+        System.println("Register for temporl event in " + timeoutMinutes + " minutes");
+        Background.registerForTemporalEvent(eventTime);
     }
 }

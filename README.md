@@ -2,7 +2,7 @@
 
 A ConnectIQ widget for Garmin watch (currently: VivoActive3 / Music).
 
-Log anything you need to do periodically, e.g. take medicine, feed your baby. Remind you the elapsed time since you last did it. 
+Time logger for anything you need to do periodically, e.g. take medicine, feed your baby. Remind you the elapsed time since you last did it.
 
 The data is directly stored on the watch. It stores up to 10 records and old records will be removed.
 
@@ -12,13 +12,17 @@ Main Screen:
 - Tap other space to show history
 
 History Screen:
-
 - Scroll up and down to see all ten entries
 - Tap or swipe right to go back
 
+Settings can be adjusted in Garmin Connect mobile app or Garmin Express.
+
+- Time out: in minutes. Change color of time display on main screen to orange when time passed.
+- Alert: Wake up the widge on timeout if it's not running in foreground. The behavior on wake up differs on watch model, usually there is a vibration if the watch is not in Do Not Disturb mode. 
+
 ## Screenshots
 ![VivoActive3 Main Screen](./screenshots/vivoactive3_Main.PNG)
-![VivoActive3 Log Screen](./screenshots/vivoactive3_Log.PNG)
+![VivoActive3 Log Screen](./screenshots/vivoactive3_history.png)
 
 ## Develop
 - Install JDK8
@@ -44,4 +48,4 @@ jenv local 1.8
 
 ## Credits
 - Originate from the [BabyLog:Feed](https://github.com/tanstaaflFH/BabyLog-Feed-ConnectIQ) app made by [Falko Hegewald](fh.development@zoho.eu).
-- Icons made by [Dave Gandy](https://www.flaticon.com/authors/dave-gandy)</a> from https://www.flaticon.com/
+- Icons made by [Dave Gandy](https://www.flaticon.com/authors/dave-gandy) from https://www.flaticon.com/

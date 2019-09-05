@@ -1,2 +1,5 @@
 <properties>
+  <property id="logType" type="string">log</property>
+  <property id="timeoutMinutes" type="number">240</property>
+  <property id="alert" type="boolean">false</property>
 </properties>

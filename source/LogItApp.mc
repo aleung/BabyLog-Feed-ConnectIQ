@@ -1,6 +1,7 @@
 using Toybox.Application;
 using Toybox.Application.Storage;
 
+(:background)
 class LogItApp extends Application.AppBase {
 
 	var log;
@@ -24,4 +25,8 @@ class LogItApp extends Application.AppBase {
         return [ initialView, new MainDelegate(log) ];
     }
 
+    // This method runs each time the background process starts.
+    function getServiceDelegate(){
+        return [new BackgroundServiceDelegate()];
+    }
 }

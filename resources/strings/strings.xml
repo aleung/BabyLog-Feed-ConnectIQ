@@ -1,3 +1,8 @@
 <strings>
     <string id="AppName">Log It</string>
+    <string id="LogType">Activity to log</string>
+    <string id="LogTypePrompt">For example: take medicine, feed your baby</string>
+    <string id="Timeout">Timeout in minutes</string>
+    <string id="TimeoutPrompt">At least 5 minutes</string>
+    <string id="Alert">Alert on timeout</string>
 </strings>
