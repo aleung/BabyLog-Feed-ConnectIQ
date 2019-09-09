@@ -16,9 +16,8 @@ History Screen:
 - Tap or swipe right to go back
 
 Settings can be adjusted in Garmin Connect mobile app or Garmin Express.
-
 - Time out: in minutes. Show progress bar according to elapsed percentage.
-- Alert: Wake up the widge on timeout if it's not running in foreground. The behavior on wake up differs on watch model, usually there is a vibration if the watch is not in Do Not Disturb mode. 
+- Alert: Wake up the widget on timeout if it's not running in foreground. The behavior on wake up differs on watch model, usually there is a vibration if the watch is not in Do Not Disturb mode. 
 
 ## Screenshots
 ![VivoActive3 Main Screen](./screenshots/vivoactive3_Main.PNG)
