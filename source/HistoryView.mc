@@ -15,14 +15,12 @@ class HistoryView extends WatchUi.View {
     function onLayout(dc) {
         setLayout(Rez.Layouts.HistoryLayout(dc));      
         updateLogLabels(9);
-        //System.println("Layout loaded for FBLView");
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    	
     }
 
     // Update the view
@@ -30,7 +28,6 @@ class HistoryView extends WatchUi.View {
     
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
-       
     }
 
     // Called when this View is removed from the screen. Save the

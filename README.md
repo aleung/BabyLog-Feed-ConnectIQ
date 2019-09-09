@@ -17,7 +17,7 @@ History Screen:
 
 Settings can be adjusted in Garmin Connect mobile app or Garmin Express.
 
-- Time out: in minutes. Change color of time display on main screen to orange when time passed.
+- Time out: in minutes. Show progress bar according to elapsed percentage.
 - Alert: Wake up the widge on timeout if it's not running in foreground. The behavior on wake up differs on watch model, usually there is a vibration if the watch is not in Do Not Disturb mode. 
 
 ## Screenshots
@@ -35,7 +35,7 @@ Settings can be adjusted in Garmin Connect mobile app or Garmin Express.
 ```
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
-brew install jenv   # add follow the console output to setup your shell
+brew install jenv          # follow the console output to setup your shell
 ```
 
 Following instruction on https://github.com/jenv/jenv to setup `jenv` 

@@ -3,7 +3,19 @@
     <iq:application version="1.0.0" entry="LogItApp" id="2581c6a8734b448e834f0a8ee6324590" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.0.0" name="@Strings.AppName" type="widget">
         <iq:products>
             <iq:product id="vivoactive3"/>
+            <iq:product id="vivoactive3d"/>
             <iq:product id="vivoactive3m"/>
+            <iq:product id="vivoactive3mlte"/>
+            <!-- <iq:product id="fr245" />
+            <iq:product id="fr245m" />
+            <iq:product id="fr645" />
+            <iq:product id="fr645m" />
+            <iq:product id="fr935" />
+            <iq:product id="fr945" />
+            <iq:product id="fenix5" />
+            <iq:product id="fenix5x" />
+            <iq:product id="fenix5xplus" />
+            <iq:product id="approachs60" /> -->
         </iq:products>
         <iq:permissions>
             <iq:uses-permission id="background" />

@@ -1,6 +1,6 @@
 <layout id="MainLayout">
     <label x="center" y="60"  justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_WHITE" id="labelElapsed" />
-    <label x="center" y="140" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL"  color="Gfx.COLOR_WHITE" text="passed since last" />
+    <label x="center" y="140" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL"  color="Gfx.COLOR_WHITE" text="elapsed since last" />
     <label x="center" y="170" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" color="Gfx.COLOR_WHITE" id="labelLogType" />
     <drawable id="backgroundMain" />
     <button x="center" y="top" width="240" height="60" behavior="onAddLogEntry" />

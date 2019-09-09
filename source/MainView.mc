@@ -24,15 +24,30 @@ class MainView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc) {
-    
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+
+        progressBar(dc);
     }
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
+    }
+
+    function progressBar(dc) {
+        var elapsed = log.getElapsed();
+        if (elapsed == null) {
+            return;
+        }
+        var timeout = Application.Properties.getValue("timeoutMinutes") * 60;
+        var percentage = elapsed * 1.0 / timeout;
+
+        var width = dc.getWidth();
+        var offsetX = 13;
+        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_WHITE);
+        dc.fillRectangle(offsetX, 60, (width - offsetX * 2) * percentage, 7);
     }
 
 	function updateLabels() {
@@ -52,7 +67,7 @@ class MainView extends WatchUi.View {
                 : Lang.format("$1$:$2$", [hours.format("%d"), minutes.format("%02d")]);	
             elapsedField.setText(elapsedString);
             var timeoutMinutes = Application.Properties.getValue("timeoutMinutes");
-            if (timeoutMinutes > 0 && elapsed > timeoutMinutes * 60) {
+            if (elapsed > timeoutMinutes * 60) {
                 elapsedField.setColor(Graphics.COLOR_ORANGE);
             }
         } else {

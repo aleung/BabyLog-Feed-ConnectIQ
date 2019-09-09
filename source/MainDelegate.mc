@@ -22,23 +22,18 @@ class MainDelegate extends WatchUi.BehaviorDelegate {
         setAlert();
 	}
 	
-    function onNextPage() {
-        showHistoryView();
-        return true;
-    }
-
     function onSelect() {
         showHistoryView();
         return true;
     }
 
-    function showHistoryView() {
+    private function showHistoryView() {
         var view = new HistoryView(log);
         var delegate = new HistoryDelegate(view);
         WatchUi.pushView(view, delegate, WatchUi.SLIDE_LEFT);
     }
 	 
-    function showLoggedView() {
+    private function showLoggedView() {
         var view = new LoggedView();
         WatchUi.pushView(view, null, WatchUi.SLIDE_DOWN);
     }
