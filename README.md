@@ -1,6 +1,6 @@
 # Log It
 
-A ConnectIQ widget for Garmin watch (currently: VivoActive3 / Music).
+A ConnectIQ widget for Garmin VivoActive3 series watch
 
 Time logger for anything you need to do periodically, e.g. take medicine, feed your baby. Remind you the elapsed time since you last did it.
 
